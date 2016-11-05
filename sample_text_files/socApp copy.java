@@ -1,4 +1,4 @@
-import src.Sound_of_code;
+import src.midi_utilities;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -30,7 +30,7 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 
-public class java 
+public class socApp 
 {
     static File midiFile;
 	
@@ -75,7 +75,7 @@ public class java
                         File txtFile = chooser.getSelectedFile();
                         try {
                                 FileReader file = new FileReader(txtFile);
-                                midiFile = Sound_of_code.buildMidi(file); //txtFile
+                                midiFile = midi_utilities.buildMidi(file); //txtFile
                                 
                         } catch (Exception exc) {
                                 JOptionPane.showMessageDialog(f,

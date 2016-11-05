@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import javax.sound.midi.*;
 
 
-public class Sound_of_code 
+public class midi_utilities 
 {
     public static File buildMidi(FileReader in) throws IOException 
     {   
